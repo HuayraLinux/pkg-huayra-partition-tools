@@ -1,0 +1,19 @@
+Source: huayra-partition-finder
+Section: utils
+Priority: optional
+Maintainer: Huayra Devel <huayra-devel@listas.huayragnulinux.com.ar>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: http://github.com/huayralinux/huayra-partition-finder
+Vcs-Git: http://github.com/huayralinux/pkg-huayra-partition-finder.git
+
+Package: huayra-partition-finder
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         python (<= 2.8), util-linux (>= 2.25.2),
+         os-prober (>= 1.65)
+Replaces: huayra-marble (<< 0.17)
+Breaks: huayra-marble (<< 0.17)
+Description: Helper para configurar particiones (exclusivo Huayra)
+ Helper para configurar correctamente las particiones de
+ Recuperacion y Windows en las netbooks con Huayra GNU/Linux
