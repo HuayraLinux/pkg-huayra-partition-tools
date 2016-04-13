@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: huayra-partition-finder
-Source: http://github.com/huayralinux/huayra-partition-finder
+Upstream-Name: huayra-partition-tools
+Source: http://github.com/huayralinux/huayra-partition-tools
 
 Files: *
 Copyright: 2016 Huayra Devel <huayra-devel@listas.huayragnulinux.com.ar>

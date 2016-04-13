@@ -1,13 +1,13 @@
-Source: huayra-partition-finder
+Source: huayra-partition-tools
 Section: utils
 Priority: optional
 Maintainer: Huayra Devel <huayra-devel@listas.huayragnulinux.com.ar>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.6
-Homepage: http://github.com/huayralinux/huayra-partition-finder
-Vcs-Git: http://github.com/huayralinux/pkg-huayra-partition-finder.git
+Homepage: http://github.com/huayralinux/huayra-partition-tools
+Vcs-Git: http://github.com/huayralinux/pkg-huayra-partition-tools.git
 
-Package: huayra-partition-finder
+Package: huayra-partition-tools
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          python (<= 2.8), util-linux (>= 2.25.2),
