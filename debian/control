@@ -12,8 +12,8 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
          python (<= 2.8), util-linux (>= 2.25.2),
          os-prober (>= 1.65)
-Replaces: huayra-marble (<< 0.17)
-Breaks: huayra-marble (<< 0.17)
+Replaces: huayra-marble (<< 0.18)
+Breaks: huayra-marble (<< 0.18)
 Description: Helper para configurar particiones (exclusivo Huayra)
  Helper para configurar correctamente las particiones de
  Recuperacion y Windows en las netbooks con Huayra GNU/Linux
