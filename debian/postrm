@@ -1,0 +1,22 @@
+#! /bin/sh
+set -e
+
+    if [ -f /etc/huayra/grub/windows.tmpl ]; then
+      rm /etc/huayra/grub/windows.tmpl
+    fi
+
+    if [ -f /etc/huayra/grub/recuperacion.tmpl ]; then
+      rm /etc/huayra/grub/recuperacion.tmpl
+    fi
+
+    if [ -f /etc/grub.d/31_partition-finder ]; then
+      rm /etc/grub.d/31_partition-finder
+    fi
+
+    dpkg-divert --remove --rename /etc/huayra/grub/windows.tmpl
+
+    dpkg-divert --remove --rename /etc/huayra/grub/recuperacion.tmpl
+
+    dpkg-divert --remove --rename /etc/grub.d/31_partition-finder
+
+#DEBHELPER#

@@ -8,7 +8,7 @@ Homepage: http://github.com/huayralinux/huayra-partition-tools
 Vcs-Git: http://github.com/huayralinux/pkg-huayra-partition-tools.git
 
 Package: huayra-partition-tools
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends},
          python (<= 2.8), util-linux (>= 2.25.2),
          os-prober (>= 1.65)

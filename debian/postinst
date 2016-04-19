@@ -1,6 +1,30 @@
 #! /bin/sh
 set -e
 
+if [ "$1" = "install" ];
+then
+    dpkg-divert --add --rename \
+                --divert /etc/huayra/grub/windows.tmpl.deprecated \
+                /etc/huayra/grub/windows.tmpl
+
+    dpkg-divert --add --rename \
+                --divert /etc/huayra/grub/recuperacion.tmpl.deprecated \
+                /etc/huayra/grub/recuperacion.tmpl
+
+    dpkg-divert --add --rename \
+                --divert /etc/grub.d/31_partition-finder.deprecated \
+                /etc/grub.d/31_partition-finder
+
+    cp /usr/share/huayra-partition-tools/tmpl/windows.tmpl \
+       /etc/huayra/grub/windows.tmpl
+
+    cp /usr/share/huayra-partition-tools/tmpl/recuperacion.tmpl \
+       /etc/huayra/grub/recuperacion.tmpl
+
+    cp /usr/share/huayra-partition-tools/partition-finder.py \
+       /etc/grub.d/31_partition-finder
+fi
+
 if [ "$1" = "configure" ];
 then
 

@@ -1,2 +1,2 @@
-partition-finder.py /etc/grub.d/31_partition-finder
-tmpl/* /etc/huayra/grub/
+partition-finder.py /usr/share/huayra-partition-tools/
+tmpl/* /usr/share/huayra-partition-tools/tmpl/
