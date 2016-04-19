@@ -11,7 +11,7 @@ if [ upgrade != "$1" ] || dpkg --compare-versions "$2" lt 0.2-7; then
                 /etc/huayra/grub/recuperacion.tmpl
 
     dpkg-divert --add --rename \
-                --divert /etc/grub.d/31_partition-finder.deprecated \
+                --divert /usr/share/huayra-partition-tools/31_partition-finder.deprecated \
                 /etc/grub.d/31_partition-finder
 
     cp /usr/share/huayra-partition-tools/tmpl/windows.tmpl \
@@ -22,6 +22,8 @@ if [ upgrade != "$1" ] || dpkg --compare-versions "$2" lt 0.2-7; then
 
     cp /usr/share/huayra-partition-tools/partition-finder.py \
        /etc/grub.d/31_partition-finder
+
+    chmod +x /etc/grub.d/31_partition-finder
 fi
 
 if [ "$1" = "configure" ];
