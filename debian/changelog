@@ -1,3 +1,10 @@
+huayra-partition-tools (0.2.1-1) unstable; urgency=low
+
+  * Cierro bug #1 de gh.
+    `savedefault` debe respetar a /etc/default/grub
+
+ -- Huayra Devel <huayra-devel@listas.huayragnulinux.com.ar>  Wed, 11 May 2016 15:57:03 -0300
+
 huayra-partition-tools (0.2-7) unstable; urgency=low
 
   * Agrego dirs
