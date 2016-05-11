@@ -2,6 +2,7 @@ huayra-partition-tools (0.4-1) unstable; urgency=low
 
   * Cierro bug #1 de gh.
     `savedefault` debe respetar a /etc/default/grub
+  * Actualizo version en postinst.
 
  -- Huayra Devel <huayra-devel@listas.huayragnulinux.com.ar>  Wed, 11 May 2016 15:57:03 -0300
 
