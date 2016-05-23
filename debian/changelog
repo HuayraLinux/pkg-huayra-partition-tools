@@ -1,3 +1,9 @@
+huayra-partition-tools (0.5-1) unstable; urgency=medium
+
+  * Cambio de labels de los templates
+
+ -- Fernando Toledo <ragnarok@docksud.com.ar>  Mon, 23 May 2016 10:35:44 -0300
+
 huayra-partition-tools (0.4-1) unstable; urgency=low
 
   * Cierro bug #1 de gh.
