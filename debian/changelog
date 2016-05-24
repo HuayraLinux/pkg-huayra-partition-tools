@@ -1,4 +1,4 @@
-huayra-partition-tools (0.5-2) unstable; urgency=medium
+huayra-partition-tools (0.6-1) unstable; urgency=medium
 
   * Solo verifica SAVEDEFAULT al generar los templates
 
