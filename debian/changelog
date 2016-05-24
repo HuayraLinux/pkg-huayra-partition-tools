@@ -1,3 +1,9 @@
+huayra-partition-tools (0.5-2) unstable; urgency=medium
+
+  * Solo verifica SAVEDEFAULT al generar los templates
+
+ -- Huayra Devel <huayra-devel@listas.huayragnulinux.com.ar>  Tue, 24 May 2016 14:35:24 -0300
+
 huayra-partition-tools (0.5-1) unstable; urgency=medium
 
   * Cambio de labels de los templates
